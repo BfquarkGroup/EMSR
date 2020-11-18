@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    app:cnb_unselectedColor="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:title="Menu"
+        android:icon="@drawable/home_2"
+        app:cnb_backgroundColor="@color/white"
+        app:cnb_iconColor="@color/dark_orange"
+        app:cnb_textColor="@color/dark_orange"/>
+
+    <item
+        android:id="@+id/list"
+        android:title="Orders"
+        android:icon="@drawable/list"
+        app:cnb_backgroundColor="@color/white"
+        app:cnb_iconColor="@color/dark_orange"
+        app:cnb_textColor="@color/dark_orange"/>
+
+    <item
+        android:id="@+id/delivery"
+        android:title="Delivery"
+        android:icon="@drawable/motorcycle"
+        app:cnb_backgroundColor="@color/white"
+        app:cnb_iconColor="@color/dark_orange"
+        app:cnb_textColor="@color/dark_orange"/>
+
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/person"
+        app:cnb_backgroundColor="@color/white"
+        app:cnb_iconColor="@color/dark_orange"
+        app:cnb_textColor="@color/dark_orange"/>
+
+</menu>

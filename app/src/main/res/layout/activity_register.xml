@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Register">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="45dp"
+            android:paddingRight="45dp"
+            android:paddingLeft="45dp"
+            android:layout_below="@id/toolbar"
+            android:orientation="vertical">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/picture_holder"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="65dp"
+                android:src="@drawable/register_2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:paddingStart="5dp"
+                android:text="Name"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/orange"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/username"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_border_"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingStart="13dp"
+                android:inputType="text"
+                android:textAlignment="viewStart"
+                android:hint="Store name"/>
+
+            <TextView
+                android:id="@+id/Profession"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingStart="5dp"
+                android:text="Profession"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/orange"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingStart="3dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/restaurant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="Restaurant"
+                    android:textColor="@color/custom_black"
+                    android:textSize="16sp"
+                    tools:ignore="OnClick,RtlCompat"/>
+
+                <RadioButton
+                    android:id="@+id/cafeteria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="Cafeteria"
+                    android:textColor="@color/custom_black"
+                    android:textSize="16sp"
+                    tools:ignore="OnClick,RtlCompat"/>
+
+                <RadioButton
+                    android:id="@+id/patisseries"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="Patisseries"
+                    android:textColor="@color/custom_black"
+                    android:textSize="16sp"
+                    tools:ignore="OnClick,RtlCompat"/>
+
+                <RadioButton
+                    android:id="@+id/others"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_marginTop="3dp"
+                    android:text="Others"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/custom_black"
+                    android:textSize="16sp"
+                    tools:ignore="OnClick,RtlCompat,UnknownId" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingEnd="5dp"
+                    android:layout_marginTop="8dp"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:paddingStart="5dp"
+                android:text="Address"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/orange"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/wilaya"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_border_"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingStart="13dp"
+                android:inputType="text"
+                android:textAlignment="viewStart"
+                android:hint="Wilaya"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/city"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_border_"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingStart="13dp"
+                android:inputType="text"
+                android:textAlignment="viewStart"
+                android:hint="City"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingStart="5dp"
+                android:text="Authentication"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/orange"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/phone"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_border_"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingStart="13dp"
+                android:inputType="phone"
+                android:textAlignment="viewStart"
+                android:hint="Phone"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_border_"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingStart="13dp"
+                android:textAlignment="viewStart"
+                android:hint="Email"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_border_"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingStart="13dp"
+                android:textAlignment="viewStart"
+                android:hint="Password"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/confirm_password"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_border_"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingStart="13dp"
+                android:textAlignment="viewStart"
+                android:hint="Confirm password"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="register"
+                android:padding="3dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/btn_register"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="13dp"
+                android:textStyle="bold"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/button_border_04"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

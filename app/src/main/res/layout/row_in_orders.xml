@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/box"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="0dp"
+        app:cardCornerRadius="7dp">
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/close"
+            android:elevation="3dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_gravity="end"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/Layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/text_border_01"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8">
+
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="17dp"
+                    android:paddingStart="11dp"
+                    android:paddingEnd="7dp"
+                    android:text="Username"
+                    android:autoSizeTextType="uniform"
+                    android:textAlignment="viewStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/dark_orange"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace"
+                    tools:ignore="RtlCompat" />
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginEnd="11dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_below="@+id/name"
+                    android:background="@color/orange" />
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_below="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:paddingStart="13dp"
+                    android:textStyle="normal"
+                    android:textAlignment="viewStart"
+                    android:textSize="18sp"
+                    android:textColor="@color/dark_orange"
+                    android:text="Phone"/>
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_below="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:paddingStart="13dp"
+                    android:textStyle="normal"
+                    android:textAlignment="viewStart"
+                    android:textSize="18sp"
+                    android:textColor="@color/custom_black"
+                    android:text="Address"/>
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/image_holder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginBottom="13dp"
+                app:cardCornerRadius="7dp">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/black_food"
+                    android:background="@color/white"
+                    android:scaleType="centerCrop"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

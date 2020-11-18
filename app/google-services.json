@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "375802317947",
+    "firebase_url": "https://bfquark-01.firebaseio.com",
+    "project_id": "bfquark-01",
+    "storage_bucket": "bfquark-01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:375802317947:android:7d7ef77737b6746373a6de",
+        "android_client_info": {
+          "package_name": "com.oufar.ems"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "375802317947-e3grpfko313o3punkkgob9vajethq8gq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTox5fzzFRMJ9z1w8p4n4wlaWTzmutqDU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "375802317947-e3grpfko313o3punkkgob9vajethq8gq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:375802317947:android:e1c116593cf08db473a6de",
+        "android_client_info": {
+          "package_name": "com.oufar.emsr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "375802317947-e3grpfko313o3punkkgob9vajethq8gq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTox5fzzFRMJ9z1w8p4n4wlaWTzmutqDU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "375802317947-e3grpfko313o3punkkgob9vajethq8gq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
